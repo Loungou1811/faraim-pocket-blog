@@ -1,4 +1,10 @@
 title: FAR AIM Pocket — Pilot Regulation Notes
 description: One aviation regulation explained in plain English, every day. 14 CFR, Part 107, NTSB 830 — study notes for student pilots, CFIs and remote pilots.
+lang: en
+url: https://loungou1811.github.io
+og_image: https://loungou1811.github.io/faraim-pocket-blog/assets/og-card.png
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 theme: minima
 permalink: /:year/:month/:day/:title.html
