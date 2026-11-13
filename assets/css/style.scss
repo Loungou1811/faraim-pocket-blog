@@ -1,0 +1,69 @@
+---
+---
+
+@import "minima";
+
+/* ===== FAR AIM Pocket — AVIATION SKIN [automated] ===== */
+
+/* sky-gradient header with navy masthead */
+.site-header {
+  border-top: 5px solid #0b2b46;
+  border-bottom: 1px solid #d8e6f5;
+  background: linear-gradient(180deg, #eaf4fd 0%, #ffffff 100%);
+}
+.site-title {
+  color: #0b2b46;
+  font-weight: 700;
+}
+.site-title::before { content: "\1F6E9\FE0F  "; }
+.site-title:hover { text-decoration: none; }
+.site-nav .page-link { color: #0b2b46; }
+
+/* links: cockpit blue */
+a { color: #0b5ed7; }
+a:visited { color: #0a58ca; }
+a:hover { color: #084298; }
+
+/* section headings with a subtle horizon rule */
+.post-content h2 {
+  border-bottom: 2px solid #d8e6f5;
+  padding-bottom: 4px;
+}
+
+/* "From the reg" quotes look like a checklist / AFM excerpt */
+.post-content blockquote {
+  border-left: 4px solid #0b2b46;
+  background: #f4f8fc;
+  color: #1c2b3a;
+  font-family: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 0.85em;
+  padding: 1em 1.25em;
+  border-radius: 0 6px 6px 0;
+}
+
+/* footer gets a runway-style double rule */
+.site-footer { border-top: 4px double #0b2b46; }
+
+/* night-studying: automatic dark mode */
+@media (prefers-color-scheme: dark) {
+  body { background: #0e1620; color: #c9d6e3; }
+  .site-header {
+    background: linear-gradient(180deg, #12202e 0%, #0e1620 100%);
+    border-bottom-color: #1d3350;
+  }
+  .site-title, .site-nav .page-link { color: #9ec3ec; }
+  .site-title a { color: #9ec3ec; }
+  a { color: #6ea8fe; }
+  a:visited { color: #6ea8fe; }
+  a:hover { color: #9ec3ec; }
+  .post-content h2 { border-bottom-color: #1d3350; }
+  .post-content blockquote {
+    background: #14202e;
+    color: #aebfd2;
+    border-left-color: #3a6ea5;
+  }
+  .post-content code { background: #14202e; }
+  code { background: #14202e; }
+  pre, code { color: #c9d6e3; }
+  .site-footer { border-top-color: #3a6ea5; }
+}
